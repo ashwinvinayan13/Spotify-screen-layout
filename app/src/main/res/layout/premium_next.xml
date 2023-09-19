@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PremiumNextActivity"
+    android:orientation="vertical"
+    android:background="@color/black">
+    <RelativeLayout
+        android:id="@id/rl_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/review_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Review your plan"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:id="@+id/change_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="change plan"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true"
+        android:textSize="13sp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_2"
+        android:background="@android:color/holo_blue_bright">
+        <TextView
+            android:id="@+id/pre_ind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Premium Individual"
+            android:textColor="@color/black"
+            android:paddingTop="10dp"
+            android:textSize="22sp"
+            android:paddingStart="7dp"/>
+        <TextView
+            android:id="@+id/free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Free"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="10dp"
+            android:paddingTop="10dp"/>
+        <TextView
+            android:id="@+id/pre_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Premium Account"
+            android:layout_below="@id/pre_ind"
+            android:textColor="@color/black"
+            android:paddingStart="9dp"
+            android:paddingBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOR 1 MONTH"
+            android:layout_below="@id/free"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"
+            android:paddingEnd="10dp"
+            android:paddingBottom="8dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_3">
+        <TextView
+            android:id="@+id/Sf_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start free month"
+            android:textColor="@color/white"
+            android:paddingTop="5dp"
+            android:layout_alignParentStart="true"
+            android:paddingStart="5dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/Sb_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start billing date"
+            android:textColor="@color/white"
+            android:layout_below="@id/Sf_month"
+            android:paddingStart="5dp"
+            android:paddingTop="8dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="19-oct-2023"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/today"
+            android:paddingTop="8dp"
+            android:paddingEnd="5dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/O_119"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".Only 119.00 INR / month after 1 month trial"
+            android:layout_below="@id/Sb_date"
+            android:textColor="@color/white"
+            android:paddingTop="15dp"
+            android:textStyle="normal"
+            android:paddingStart="5dp"/>
+        <TextView
+            android:id="@+id/you_wont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".You won't be charged until 19-oct-2023"/>
+    </RelativeLayout>
+
+</RelativeLayout>
