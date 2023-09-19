@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/black">
 
     <RelativeLayout
         android:id="@+id/rl_2"
@@ -18,28 +19,36 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="premium"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/spot_log"/>
+        <ImageView
+            android:id="@+id/spot_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/spotify_logo"
+            android:layout_alignParentStart="true"/>
         <TextView
             android:id="@+id/f_trial"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/premium"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="100dp"
             android:text="Free Trial"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
 
         <TextView
             android:id="@+id/try_p"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/f_trial"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:text="Try Premium For 1 month"
-            android:textSize="45sp" />
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -56,7 +65,8 @@
             android:layout_marginEnd="5dp"
             android:background="@drawable/border"
             android:text="GET PREMIUM"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
 
         <TextView
             android:id="@+id/tv1"
@@ -65,7 +75,8 @@
             android:layout_below="@id/b1"
             android:text="From 119/month after. Offer only for users who are new to premium."
             android:textAlignment="center"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/tv2"
@@ -73,31 +84,36 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/tv1"
             android:text="Terms and conditions apply"
-            android:textSize="12sp"/>
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/rl_4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/rl_3">
+        android:layout_below="@id/rl_3"
+        android:layout_marginTop="15dp">
         <TextView
             android:id="@+id/tv3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Why Join Premium?"
             android:textSize="22sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:paddingTop="10dp"/>
         <TextView
             android:id="@+id/tv4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Download to listen offline without wifi"
             android:layout_below="@id/tv3"
-            android:layout_toEndOf="@id/ticK_icon"
-            />
-
+            android:layout_toEndOf="@id/ticK_icon1"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"/>
         <ImageView
-            android:id="@+id/ticK_icon"
+            android:id="@+id/ticK_icon1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/tv3"
@@ -109,17 +125,47 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/tv4"
             android:text="Music Without ad interruption"
-            android:layout_toEndOf="@id/ticK_icon1"/>
+            android:layout_toEndOf="@id/ticK_icon1"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"/>
         <ImageView
-            android:id="@+id/ticK_icon1"
+            android:id="@+id/ticK_icon2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_check_24"
             android:layout_alignParentStart="true"
             android:layout_below="@id/tv4"/>
         <TextView
+            android:id="@+id/tv6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2x higher sound quality than our free plan"/>
+            android:text="2x higher sound quality than our free plan"
+            android:layout_below="@id/tv5"
+            android:layout_toEndOf="@id/ticK_icon4"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"/>
+        <ImageView
+            android:id="@+id/ticK_icon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_check_24"
+            android:layout_below="@id/tv5"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel monthly plan online anytime"
+            android:layout_below="@id/tv6"
+            android:layout_toEndOf="@id/ticK_icon3"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"/>
+        <ImageView
+            android:id="@+id/ticK_icon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_check_24"
+            android:layout_below="@id/tv6"
+            android:layout_alignParentStart="true"/>
     </RelativeLayout>
 </RelativeLayout>
