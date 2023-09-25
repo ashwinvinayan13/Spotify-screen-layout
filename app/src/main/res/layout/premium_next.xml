@@ -12,7 +12,8 @@
     <RelativeLayout
         android:id="@id/rl_2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
     <TextView
         android:id="@+id/review_p"
         android:layout_width="wrap_content"
@@ -36,7 +37,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/rl_2"
-        android:background="@android:color/holo_blue_bright">
+        android:background="@drawable/border"
+        android:layout_marginTop="10dp">
         <TextView
             android:id="@+id/pre_ind"
             android:layout_width="wrap_content"
@@ -80,7 +82,9 @@
         android:id="@+id/rl_4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/rl_3">
+        android:layout_below="@id/rl_3"
+        android:background="#6D6A6C ">
+
         <TextView
             android:id="@+id/Sf_month"
             android:layout_width="wrap_content"
@@ -112,6 +116,7 @@
             android:paddingTop="8dp"
             android:textStyle="bold"/>
         <TextView
+            android:id="@+id/OCt19"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="19-oct-2023"
@@ -121,21 +126,191 @@
             android:paddingTop="8dp"
             android:paddingEnd="5dp"
             android:textStyle="bold"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_5"
+        android:layout_below="@id/rl_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_2">
         <TextView
             android:id="@+id/O_119"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=".Only 119.00 INR / month after 1 month trial"
-            android:layout_below="@id/Sb_date"
             android:textColor="@color/white"
-            android:paddingTop="15dp"
             android:textStyle="normal"
-            android:paddingStart="5dp"/>
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"/>
         <TextView
             android:id="@+id/you_wont"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=".You won't be charged until 19-oct-2023"/>
-    </RelativeLayout>
+            android:paddingStart="5dp"
+            android:layout_below="@id/O_119"
+            android:text=".You won't be charged until 19-oct-2023"
+            android:textColor="@color/white" />
 
+        <TextView
+            android:id="@+id/Ot_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".Cancel anytime. Offer terms apply."
+            android:layout_below="@id/you_wont"
+            android:paddingStart="5dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/We_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".We'll remind you 7 days before you get charged."
+            android:layout_below="@id/Ot_apply"
+            android:textColor="@color/white"
+            android:paddingStart="5dp"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_5"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:id="@+id/Choose_how"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose how to pay"
+            android:textSize="27sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/Ycp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can pay for premium plan directly through Spotify or using your google play account."
+            android:layout_below="@id/Choose_how"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/rl_6"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/but_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Ycp"
+            android:layout_marginStart="110dp"
+            android:text="Spotify"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/but_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Ycp"
+            android:layout_toEndOf="@id/but_1"
+            android:text="Google play"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_3">
+        <TextView
+            android:id="@+id/Pfy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay for Your Premium plan directly through Spotify with"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginStart="50sp"/>
+        <TextView
+            android:id="@+id/any_sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="any supported payment method."
+            android:layout_below="@id/Pfy"
+            android:textColor="@color/white"
+            android:layout_marginStart="100sp"/>
+        <ImageView
+            android:id="@+id/baseline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_diamond_24"
+            android:layout_below="@id/any_sp"
+            android:layout_marginStart="150dp"
+            android:paddingTop="10dp"/>
+        <ImageView
+            android:id="@+id/_Logo_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_currency_bitcoin_24"
+            android:layout_toEndOf="@id/baseline"
+            android:layout_below="@id/any_sp"
+            android:paddingTop="10dp"/>
+        <ImageView
+            android:id="@+id/_112"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_currency_rupee_24"
+            android:layout_toEndOf="@id/_Logo_"
+            android:layout_below="@id/any_sp"
+            android:paddingTop="10dp"/>
+        <ImageView
+            android:id="@+id/img_cu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_currency_pound_24"
+            android:layout_toEndOf="@id/_112"
+            android:layout_below="@id/any_sp"
+            android:paddingTop="10dp"/>
+        <Button
+            android:id="@+id/but_3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="+6"
+            android:layout_toEndOf="@id/img_cu"
+            android:layout_below="@id/any_sp"
+            android:layout_marginTop="6dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue with Spotify"
+            android:layout_below="@id/_112"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_7"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="india"
+            android:textColor="@color/white"
+            android:layout_marginStart="150dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="change country"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"/>
+    </LinearLayout>
 </RelativeLayout>

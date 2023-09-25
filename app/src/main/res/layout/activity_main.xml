@@ -12,7 +12,8 @@
     <RelativeLayout
         android:id="@+id/rl_2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="260dp"
+        android:background="@drawable/playlist_cover">
 
         <TextView
             android:id="@+id/premium"
@@ -44,7 +45,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/f_trial"
-            android:layout_marginTop="20dp"
             android:text="Try Premium For 1 month"
             android:textSize="45sp"
             android:textStyle="bold"
@@ -57,16 +57,17 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/rl_2">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/b1"
             android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:background="@drawable/border"
+            android:background="@drawable/border_p1"
             android:text="GET PREMIUM"
             android:textSize="20sp"
-            android:textColor="@color/white"/>
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
 
         <TextView
             android:id="@+id/tv1"
@@ -76,7 +77,8 @@
             android:text="From 119/month after. Offer only for users who are new to premium."
             android:textAlignment="center"
             android:textSize="12sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
 
         <TextView
             android:id="@+id/tv2"
@@ -93,7 +95,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/rl_3"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border_p2">
         <TextView
             android:id="@+id/tv3"
             android:layout_width="wrap_content"
@@ -102,7 +105,8 @@
             android:textSize="22sp"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:paddingTop="10dp"/>
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
         <TextView
             android:id="@+id/tv4"
             android:layout_width="wrap_content"
@@ -111,14 +115,15 @@
             android:layout_below="@id/tv3"
             android:layout_toEndOf="@id/ticK_icon1"
             android:textColor="@color/white"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginTop="10dp"/>
         <ImageView
             android:id="@+id/ticK_icon1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/tv3"
             android:layout_alignParentStart="true"
-            android:src="@drawable/baseline_check_24"/>
+            android:src="@drawable/baseline_check_24"
+            android:layout_marginStart="10dp"/>
         <TextView
             android:id="@+id/tv5"
             android:layout_width="wrap_content"
@@ -127,14 +132,15 @@
             android:text="Music Without ad interruption"
             android:layout_toEndOf="@id/ticK_icon1"
             android:textColor="@color/white"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginTop="10dp"/>
         <ImageView
             android:id="@+id/ticK_icon2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_check_24"
             android:layout_alignParentStart="true"
-            android:layout_below="@id/tv4"/>
+            android:layout_below="@id/tv4"
+            android:layout_marginStart="10dp"/>
         <TextView
             android:id="@+id/tv6"
             android:layout_width="wrap_content"
@@ -143,14 +149,15 @@
             android:layout_below="@id/tv5"
             android:layout_toEndOf="@id/ticK_icon4"
             android:textColor="@color/white"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginTop="10dp"/>
         <ImageView
             android:id="@+id/ticK_icon4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_check_24"
             android:layout_below="@id/tv5"
-            android:layout_alignParentStart="true"/>
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"/>
         <TextView
             android:id="@+id/tv7"
             android:layout_width="wrap_content"
@@ -159,13 +166,16 @@
             android:layout_below="@id/tv6"
             android:layout_toEndOf="@id/ticK_icon3"
             android:textColor="@color/white"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"/>
         <ImageView
             android:id="@+id/ticK_icon3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_check_24"
             android:layout_below="@id/tv6"
-            android:layout_alignParentStart="true"/>
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:paddingBottom="10dp"/>
     </RelativeLayout>
 </RelativeLayout>
